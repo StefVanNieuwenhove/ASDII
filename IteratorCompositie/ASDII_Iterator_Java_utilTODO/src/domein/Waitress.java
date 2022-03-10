@@ -31,7 +31,11 @@ public class Waitress {
 		
 		System.out.printf("MENU%n---%n");
 		menus.forEach(x -> {
-			System.out.printf("%s%n---------%n", x.getTitle());
+			System.out.printf("%s%n", x.getTitle());
+			/*int count = x.getTitle().length();
+			for (int i = 0; i < count; i++)
+				System.out.print("-");
+			System.out.println();*/
 			printMenu(x.createIterator());
 			//System.out.println("----------------------------");
 		});
